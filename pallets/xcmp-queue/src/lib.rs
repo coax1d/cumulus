@@ -336,7 +336,7 @@ pub mod pallet {
 	/// case of the need to send a high-priority signal message this block.
 	/// The bool is true if there is a signal message waiting to be sent.
 	#[pallet::storage]
-	pub(super) type OutboundXcmpStatus<T: Config> =
+	pub type OutboundXcmpStatus<T: Config> =
 		StorageValue<_, Vec<OutboundChannelDetails>, ValueQuery>;
 
 	// The new way of doing it:
